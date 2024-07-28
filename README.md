@@ -22,7 +22,10 @@
    - $npm run dev (this will start the server)
 <br>
 #Now again open the index.html page this is the entry point for this web app
+<br>
 
+#to access the demo file click on the following link-
+<br>
 https://docs.google.com/document/d/13h1CrGW8L6_yCIx7hbfB98IKeM4huRA-lt1t9aUe3qw/edit?usp=sharing
 
  
