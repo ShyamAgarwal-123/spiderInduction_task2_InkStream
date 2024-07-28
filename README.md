@@ -1,7 +1,7 @@
 #follow the Steps to run the app 
 
 
-#download all the files from this repo into a folder
+#download the zip file by clicking the green code button and then extract it 
 <br>
 #also download the node.js into your system and install it
 <br>
