@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    padding-top: 5rem;
+}
+
+#container {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(250, 250, 250);
+    padding-top: 4rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+}
+
+#bookForm {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: white;
+    gap: 14px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+}
+
+.input, select, textarea {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: lightgrey;
+    padding: 18px;
+    box-sizing: border-box;
+    font-size: large;
+}
+
+textarea {
+    resize: none;
+    overflow: hidden;
+}
+
+.book-field {
+    line-height: 25px;
+}
+
+#coverImage {
+    padding-top: 5px;
+    padding-bottom: 25px;
+    cursor: pointer;
+    padding-left: 0;
+}
+
+button {
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+    background-color: rgba(53, 53, 205, 1);
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    border-width: 1px;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+button:hover {
+    background-color: rgba(53, 53, 205, 0.85);
+}

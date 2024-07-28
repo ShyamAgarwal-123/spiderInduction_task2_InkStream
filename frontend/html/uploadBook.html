@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/uploadBook.css">
+    <title>Upload Book</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen'></i>
+            <span class="logo navLogo"><a href="index.html">InkStream</a></span>
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="index.html">InkStream</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="./index.html">Books</a></li>
+                    <li><a href="./users.html">Users</a></li>
+                    <li><a href="./profile.html">Profile</a></li>
+                    <li><a href="./uploadBook.html">Upload</a></li>
+                </ul>
+            </div>
+
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+
+                <!-- <div class="searchBox">
+                   <div class="searchToggle">
+                    <i class='bx bx-x cancel'></i>
+                    <i class='bx bx-search search'></i>
+                   </div>
+
+                    <div class="search-field">
+                        <input type="search" id="search-input" placeholder="Search...">
+                        <i class='bx bx-search' id="search-icon"></i>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </nav>
+    <div id="container">
+        <form id="bookForm" enctype="multipart/form-data" method="POST" action="/upload-book">
+            <h2>Upload Book</h2>
+            <div class="book-field">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" class="input" required>
+            </div>
+            <div class="book-field">
+                <label for="genre">Genre</label>
+                <select id="genre" name="genre" required>
+                    <option value="Fiction">Fiction</option>
+                    <option value="Non-Fiction">Non-Fiction</option>
+                </select>
+            </div>
+            <div class="book-field">
+                <label for="price">Price</label>
+                <input type="number" id="price" name="price" class="input" required>
+            </div>
+            <div class="book-field">
+                <label for="content">Content</label>
+                <textarea id="content" name="content" rows="1" required></textarea>
+            </div>
+            <div class="book-field">
+                <label for="coverImage">Upload Cover Image</label>
+                <input type="file" id="coverImage" name="coverImage" class="input" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="../js/nav.js">
+    </script>
+    <script>
+        const textarea = document.getElementById('content');
+
+        textarea.addEventListener('input', function () {
+            this.style.height = 'auto';
+            this.style.height = (this.scrollHeight) + 'px';
+        });
+    </script>
+    <script src="../js/uploadBook.js"></script>
+</body>
+</html>

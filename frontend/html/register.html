@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/register.css">
+    <title>Register</title>
+</head>
+<body>
+    <img src="../public/logo/logo.png" alt="" class="logo">
+    <div class="block"></div>
+    <div id="container">
+        <div id="left-side">
+            <form id="registrationForm" enctype="multipart/form-data" autocomplete="on">
+                <h2>Sign Up</h2>
+                <div class="signup-field">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="signup-field">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                <div class="signup-field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="signup-field">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="signup-field">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required>
+                </div>
+                <div class="signup-field">
+                    <label for="profile_image">Upload Profile Image</label>
+                    <input type="file" id="profile_image" name="profile_image" accept="image/*" required>
+                </div>
+                <button type="submit">Sign Up</button>
+                <p>Already have an Account? <a href="./login.html">Log in</a></p>
+            </form>  
+        </div>
+        <div id="right-side">
+            <div class="cover_logo">
+                <img src="../public/logo/logo.png" class="cover_logo">
+            </div>
+            <div class="text">
+                <i><h2>“Ink Your Journey, Stream Your Wisdom”</h2></i>
+            </div>
+            
+        </div>
+    </div>
+    <script src="../js/register.js"></script>
+</body>
+</html>

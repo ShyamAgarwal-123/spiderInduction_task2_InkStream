@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    padding: 5rem;
+}
+
+.aboutBook{
+    display: flex;
+    flex-direction: row;
+    background-color: aliceblue;
+    gap: 30px;
+    padding: 20px;
+    border-radius: 25px;
+    font-size: x-large;
+    box-shadow: 10px 10px 70px #4070F4;
+    
+
+}
+
+#coverImage{
+    flex: 1;
+}
+
+#bookDetails{
+    flex: 2;
+    display: block;
+    line-height: 40px;
+}
+
+.cover-Image{
+    width: 500px;
+    height: 281.25px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px #4070F4;
+}
+
+.reviewsStatus{
+    display: flex;
+    gap: 20px;
+}
+
+.commentDiv{
+    display: flex;
+    gap: 5px;
+}
+
+.ratingDiv{
+    display: flex;
+    gap: 5px;
+}
+
+.commentImg{
+    height: 30px;
+    margin-left: -5px;
+    margin-top: 5px;
+}
+
+.ratingImg{
+    height:20px;
+    margin-top: 8px;
+}
+
+.bookButtons{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    
+}
+
+.favButton ,.buyButton{
+    padding: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: large;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: rgba(53, 53, 205, 1);
+    color: white;
+    border-radius: 10px;
+    transition: all 0.15s;
+}
+
+.favButton:hover ,.buyButton:hover{
+    background-color: rgba(53, 53, 205, 0.85);
+}
+
+.content{
+    margin-top: 10px;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 70px #4070F4;
+}
+#reviewSection{
+    margin-top: 10px;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 70px #4070F4;
+}
+.reviewElement{
+    margin-top: 10px;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px #4070F4;
+}    
+.owner-div{
+    display: flex;
+    gap: 5px;
+    line-height: 30px;
+}
+
+.owner-avatar{
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    margin-right: 2px;
+    cursor: pointer;
+}
+.owner-fullname{
+    margin-top: 17px;
+}
+
+.Reviews{
+    text-align: center;
+}
+
+.buttons-div{
+    display: flex;
+    gap: 15px;
+    margin-top: 8px;
+}
+.like, .dislike{
+    display: flex;
+    gap: 5px;
+}
+
+.likeButton{
+    padding: 4px;
+    width: 50px;
+    font-size: medium;
+    border-radius: 7px;
+    cursor: pointer;
+
+}
+
+.dislikeButton{
+    padding: 4px;
+    width: 70px;
+    font-size: medium;
+    border-radius: 7px;
+    cursor: pointer;
+
+}
+.deleteButton{
+    margin-top: 20px;
+    background-color: red;
+    color: white;
+    width: 70px;
+    font-size: medium;
+    padding: 4px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.dislikeCounter, .likeCounter{
+    margin-top: 8px;
+    font-size: medium;
+}
+.aboutAuthor{
+    margin-top: 10px;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 70px #4070F4;
+}
+
+.aboutAuthor{
+    display: flex;
+}
+.authorAvatar{
+    flex: 1;
+}
+.author-img{
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    cursor: pointer;
+}
+.authorDetails{
+    flex: 2;
+}
+.author-fullname{
+    margin-top: 130px;
+    margin-bottom: 0px;
+    font-size: x-large;
+}
+
+.subReview{
+    margin-top: 10px;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px #4070F4;
+}
+
+#reviewForm{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 14px;
+    
+}
+
+.submit {
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+    background-color: rgba(53, 53, 205, 1);
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    border-width: 1px;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.submit:hover {
+    background-color: rgba(53, 53, 205, 0.85);
+}
+
+label {
+    display: block;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: lightgrey;
+    padding: 10px;
+    font-size: medium;
+}
+textarea {
+    resize: none;
+    overflow: hidden;
+}
+.content-text{
+    font-size: large;
+}

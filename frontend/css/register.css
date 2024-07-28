@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: row;
+}
+
+#left-side {
+    flex: 1;
+    background-color: rgb(250, 250, 250);
+    padding-top: 4rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+}
+
+#right-side {
+    flex: 1;
+    background-color: rgba(46, 91, 198, 0.799);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    padding-top: 20px;
+    border-radius: 4px;
+    /* box-shadow: -2px 2px 20px; */
+}
+
+#registrationForm {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: white;
+    gap: 14px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px;
+}
+
+h2, p {
+    text-align: center;
+}
+
+label {
+    display: block;
+}
+
+input {
+    display: block;
+    width: 95%;
+    height: 15px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: lightgrey;
+    padding: 10px;
+}
+
+.signup-field {
+    line-height: 25px;
+}
+
+button {
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+    background-color: rgba(53, 53, 205, 1);
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    border-width: 1px;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+button:hover {
+    background-color: rgba(53, 53, 205, 0.85);
+}
+
+a, u {
+    text-decoration: none;
+}
+
+#profile_image {
+    cursor: pointer;
+    padding-left: 0;
+}
+
+.logo {
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.cover_logo {
+    width: 100%;
+    max-width: 400px;
+    padding-top: 40px;
+}
+
+.block {
+    position: fixed;
+    background-color: rgba(46, 91, 198, 0.799);
+    width: 100px;
+    height: 100px;
+    bottom: -50px;
+    left: -50px;
+    border-radius: 50px;
+}
+
+.text {
+    text-align: center;
+    padding: 20px;
+    margin-top: -50px;
+}
+
+@media (max-width: 768px) {
+    #container {
+        flex-direction: column;
+    }
+
+    #left-side, #right-side {
+        flex: none;
+        width: 100%;
+        padding: 20px;
+    }
+
+    #registrationForm {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .signup-field input{
+        width: 95%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .cover_logo {
+        padding-top: 20px;
+    }
+
+    .text {
+        padding: 10px;
+    }
+
+    .block {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    #left-side {
+        padding: 10px;
+    }
+
+    #registrationForm {
+        padding: 20px;
+    }
+
+    input {
+        height: auto;
+        padding: 8px;
+    }
+
+    button {
+        height: auto;
+        padding: 10px;
+    }
+}
