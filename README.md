@@ -1,7 +1,10 @@
 #follow the Steps to run the app 
 
 
-#download the zip file by clicking the green code button and then extract it 
+#download the zip file by clicking the green code button and then extract it.
+<br>
+<img width="512" alt="image" src="https://github.com/user-attachments/assets/83f01d9d-8374-4a0d-87bb-7af9047832f0">
+
 <br>
 #also download the node.js into your system and install it
 <br>
