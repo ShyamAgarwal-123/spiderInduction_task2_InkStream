@@ -11,7 +11,7 @@
 <br>
 <img width="443" alt="image" src="https://github.com/user-attachments/assets/41b6670f-93b1-4825-b1f6-b111b4a97c9e">
 <br>
-#open the .env file which is inside the backend folder and then paste the copied path in the cross-origin section and make sure to remove the forward slash from <strong>last part of the path</strong>
+#open the .env file which is inside the backend folder and then paste the copied path in the cors-origin section and make sure to remove the forward slash from <strong>last part of the path</strong>
 <br>
 <img width="338" alt="image" src="https://github.com/user-attachments/assets/9beab419-a90c-4d62-9b32-4e6ce5630c30">
 <br>
