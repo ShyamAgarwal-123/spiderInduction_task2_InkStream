@@ -15,6 +15,12 @@ let coverImage = document.getElementById('coverImage').files[0];
 form.addEventListener('submit', async (event) => {
     event.preventDefault();
 
+    const title = document.getElementById('title').value;
+    const content = document.getElementById('content').value;
+    const genre = document.getElementById('genre').value;
+    const price = document.getElementById('price').value;
+    const coverImage = document.getElementById('coverImage').files[0];
+
     // handle the form submission
     const formData = new FormData();
     formData.append('title', title);
