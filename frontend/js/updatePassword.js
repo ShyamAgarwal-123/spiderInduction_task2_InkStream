@@ -3,11 +3,13 @@ const refreshToken = localStorage.getItem('refreshToken');
 
 const form = document.getElementById("profile_imageButton");
 
-let oldPassword = document.getElementById('oldPassword').value;
-let newPassword = document.getElementById('newPassword').value;
+
 
 form.addEventListener('submit', async (event) => {
     event.preventDefault();
+
+    const oldPassword = document.getElementById('oldPassword').value;
+    const newPassword = document.getElementById('newPassword').value;
 
     try {
         let response = await fetch(`http://localhost:8000/api/v1/users/update-password`,{
