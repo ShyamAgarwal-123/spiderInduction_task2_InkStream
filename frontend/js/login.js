@@ -1,12 +1,11 @@
 const form = document.getElementById("registrationForm");
 
-
-let email = document.getElementById('email').value;
-let password = document.getElementById('password').value;
-let passwordConfirmation = document.getElementById('confirm_password').value
-
 form.addEventListener('submit', (event) => {
     event.preventDefault();
+
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const passwordConfirmation = document.getElementById('confirm_password').value;
 
     if (password !== passwordConfirmation) {
       alert('Passwords do not match');
@@ -54,6 +53,7 @@ form.addEventListener('submit', (event) => {
     }).catch(error => {
       console.error('Error:', error);
     });
+    form.reset();
     
 
 })
