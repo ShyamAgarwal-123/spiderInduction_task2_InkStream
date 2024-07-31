@@ -4,11 +4,11 @@ const refreshToken = localStorage.getItem('refreshToken');
 const email_form = document.getElementById('registrationForm')
 //const fullname_form = document.querySelector('emailButton');
 
+let email = document.getElementById('email').value;
+
 
 email_form.addEventListener('submit', async (event) => {
     event.preventDefault();
-
-    const email = document.getElementById('email').value;
 
     try {
         let response = await fetch(`http://localhost:8000/api/v1/users/update-account`,{
