@@ -1,15 +1,16 @@
 
 const form = document.getElementById("registrationForm");
 
+
+let fullname = document.getElementById('fullname').value;
+let username = document.getElementById('username').value;
+let email = document.getElementById('email').value;
+let password = document.getElementById('password').value;
+let passwordConfirmation = document.getElementById('confirm_password').value;
+let avatar = document.getElementById('profile_image').files[0];
+
 form.addEventListener('submit', (event) => {
     event.preventDefault();
-
-    const fullname = document.getElementById('fullname').value;
-    const username = document.getElementById('username').value;
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-    const passwordConfirmation = document.getElementById('confirm_password').value;
-    const avatar = document.getElementById('profile_image').files[0];
 
     if (password !== passwordConfirmation) {
       alert('Passwords do not match');
