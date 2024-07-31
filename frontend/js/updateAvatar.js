@@ -4,10 +4,11 @@ document.addEventListener('DOMContentLoaded', async() => {
 
   const profileImageForm = document.getElementById('registrationForm');
 
+  let avatar = document.getElementById('profile_image').files[0];
+
   profileImageForm.addEventListener('submit', async (event) => {
       event.preventDefault();
-
-      const avatar = document.getElementById('profile_image').files[0];
+    
       const formData = new FormData();
       formData.append('avatar', avatar);
 
