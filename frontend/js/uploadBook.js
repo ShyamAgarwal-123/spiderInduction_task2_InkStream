@@ -5,12 +5,6 @@ const refreshToken = localStorage.getItem('refreshToken');
 
 const form = document.getElementById("bookForm");
 
-let title = document.getElementById('title').value;
-let content = document.getElementById('content').value;
-let genre = document.getElementById('genre').value;
-let price = document.getElementById('price').value;
-let coverImage = document.getElementById('coverImage').files[0];
-
 
 form.addEventListener('submit', async (event) => {
     event.preventDefault();
